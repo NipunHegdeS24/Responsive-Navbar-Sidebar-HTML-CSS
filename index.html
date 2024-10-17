@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            width:30vw;
+            height:100vh; 
+            box-sizing: border-box;
+            background-color:lightcoral;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            display:none;
+        }
+        ul {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        li{
+            padding: 4vh;
+        }
+        a{
+            text-decoration: none;
+        }
+        .fa{
+            font-size:35px;
+        }
+        .spanName{
+            display:none;
+        }
+
+        @media (min-width:648px) and (max-width:1200px)
+        {
+            img{
+                display:none;
+            }
+            .fa{
+                font-size:55px;
+            }
+            .spanName{
+                display:inline;
+                font-size: 20px;
+            }
+        }
+        @media (min-width:1201px) and (max-width:4500px)
+        {
+            .container{
+                width: 100%;
+                height: 20vh;
+                flex-direction: row;
+            }
+            #image-container > img{
+                display:block;
+                width: 17vh;
+                height:17vh;
+                margin:5px;
+            }
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                list-style-type: none;
+                padding: 0;
+            }
+            li{
+                padding: 4vh;
+                align-items:flex-end;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="image-container">
+            <img src="https://th.bing.com/th/id/R.67aeb1a0376e4b7ab7476ed7a70a269c?rik=5dOefAcm2d3Yig&riu=http%3a%2f%2fresources.mynewsdesk.com%2fimage%2fupload%2fc_limit%2cdpr_auto%2cf_auto%2ch_700%2cq_auto%2cw_auto%2fmvyc7hebj6gnnomrbdxu.jpg&ehk=ejl5btDVJwcEk3rBBTbqesV0zfHyZ3QCMFL%2f0vQGUHs%3d&risl=&pid=ImgRaw&r=0" alt="logo"/>
+        </div>
+
+        <ul>
+            <li>
+                <a href="">
+                    <span class="spanIcon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    <span class="spanName">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="spanIcon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <span class="spanName">Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="spanIcon"><i class="fa fa-bar-chart" aria-hidden="true"></i></span>
+                    <span class="spanName">Chart</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="spanIcon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                    <span class="spanName">Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="spanIcon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                    <span class="spanName">Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
